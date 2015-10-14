@@ -8,7 +8,8 @@
                 'cflags_cc!': [ '-fno-exceptions' ],
                 'cflags': ['-fPIC', "-O4", "-std=c++14", "-fexceptions"],
                 'include_dirs': [
-                    '$(HDF5_HOME)/include'
+                    '$(HDF5_HOME)/include',
+                    '<!(node -e "require(\'nan\')")'
                 ],
                 'sources': [
                     'src/hdf5.cc',
@@ -28,6 +29,7 @@
             ['OS=="win"', {
                 'include_dirs': [
                     '$(HDF5_HOME)/include',
+                    '<!(node -e "require(\'nan\')")',
                     './win/include',
                     './src',
                     'C:/Software/node-v0.12.7/src',
@@ -77,7 +79,8 @@
                     'OTHER_CPLUSPLUSFLAGS': ["-fPIC", "-O4", "-std=c++11", "-fexceptions","-v"]
                 },
                 'include_dirs': [
-                    '$(HDF5_HOME)/include'
+                    '$(HDF5_HOME)/include',
+                    '<!(node -e "require(\'nan\')")'
                 ],
                 'sources': [
                     'src/hdf5.cc',
@@ -106,7 +109,8 @@
             ['OS=="linux"', {
                 'cflags': ['-fPIC', "-O4", "-std=c++14", "-fexceptions"],
                 'include_dirs': [
-                    '$(HDF5_HOME)/include'
+                    '$(HDF5_HOME)/include',
+                    '<!(node -e "require(\'nan\')")'
                 ],
                 'sources': [
                     'src/h5lt.cc',
@@ -125,6 +129,7 @@
             ['OS=="win"', {
                 'include_dirs': [
                     '$(HDF5_HOME)/include',
+                    '<!(node -e "require(\'nan\')")',
                     './win/include',
                     './src',
                     'C:/Software/node-v0.12.7/src',
@@ -171,7 +176,8 @@
                     'OTHER_CPLUSPLUSFLAGS': ["-fPIC", "-O4", "-std=c++11", "-fexceptions","-v"]
                 },
                 'include_dirs': [
-                    '$(HDF5_HOME)/include'
+                    '$(HDF5_HOME)/include',
+                    '<!(node -e "require(\'nan\')")'
                 ],
                 'sources': [
                     'src/h5lt.cc',
@@ -197,7 +203,8 @@
                 'cflags_cc!': [ '-fno-exceptions' ],
                 'cflags': ['-fPIC', "-O4", "-std=c++14", "-fexceptions"],
                 'include_dirs': [
-                    '$(HDF5_HOME)/include'
+                    '$(HDF5_HOME)/include',
+                    '<!(node -e "require(\'nan\')")'
                 ],
                 'sources': [
                     'src/h5tb.cc',
@@ -216,6 +223,7 @@
             ['OS=="win"', {
                 'include_dirs': [
                     '$(HDF5_HOME)/include',
+                    '<!(node -e "require(\'nan\')")',
                     './win/include',
                     './src',
                     'C:/Software/node-v0.12.7/src',
@@ -262,7 +270,8 @@
                     'OTHER_CPLUSPLUSFLAGS': ["-fPIC", "-O4", "-std=c++11", "-fexceptions","-v"]
                 },
                 'include_dirs': [
-                    '$(HDF5_HOME)/include'
+                    '$(HDF5_HOME)/include',
+                    '<!(node -e "require(\'nan\')")'
                 ],
                 'sources': [
                     'src/h5tb.cc',
@@ -286,7 +295,8 @@
             ['OS=="linux"', {
                 'cflags': ['-fPIC', "-O4", "-std=c++14", "-fexceptions"],
                 'include_dirs': [
-                    '$(HDF5_HOME)/include'
+                    '$(HDF5_HOME)/include',
+                    '<!(node -e "require(\'nan\')")'
                 ],
                 'sources': [
                     'src/h5pt.cc',
@@ -305,6 +315,7 @@
             ['OS=="win"', {
                 'include_dirs': [
                     '$(HDF5_HOME)/include',
+                    '<!(node -e "require(\'nan\')")',
                     './win/include',
                     './src',
                     'C:/Software/node-v0.12.7/src',
@@ -351,7 +362,8 @@
                     'OTHER_CPLUSPLUSFLAGS': ["-fPIC", "-O4", "-std=c++11", "-fexceptions","-v"]
                 },
                 'include_dirs': [
-                    '$(HDF5_HOME)/include'
+                    '$(HDF5_HOME)/include',
+                    '<!(node -e "require(\'nan\')")'
                 ],
                 'sources': [
                     'src/h5pt.cc',
@@ -377,7 +389,8 @@
                 'cflags_cc!': [ '-fno-exceptions' ],
                 'cflags': ['-fPIC', "-O4", "-std=c++14", "-fexceptions"],
                 'include_dirs': [
-                    '$(HDF5_HOME)/include'
+                    '$(HDF5_HOME)/include',
+                    '<!(node -e "require(\'nan\')")'
                 ],
                 'sources': [
                     'src/h5im.cc',
@@ -396,6 +409,7 @@
             ['OS=="win"', {
                 'include_dirs': [
                     '$(HDF5_HOME)/include',
+                    '<!(node -e "require(\'nan\')")',
                     './win/include',
                     './src',
                     'C:/Software/node-v0.12.7/src',
@@ -442,7 +456,8 @@
                     'OTHER_CPLUSPLUSFLAGS': ["-fPIC", "-O4", "-std=c++11", "-fexceptions", "-v"]
                 },
                 'include_dirs': [
-                    '$(HDF5_HOME)/include'
+                    '$(HDF5_HOME)/include',
+                    '<!(node -e "require(\'nan\')")'
                 ],
                 'sources': [
                     'src/h5im.cc',
@@ -468,7 +483,8 @@
                 'cflags_cc!': [ '-fno-exceptions' ],
                 'cflags': ['-fPIC', "-O4", "-std=c++14", "-fexceptions"],
                 'include_dirs': [
-                    '$(HDF5_HOME)/include'
+                    '$(HDF5_HOME)/include',
+                    '<!(node -e "require(\'nan\')")'
                 ],
                 'sources': [
                     'src/h5ds.cc',
@@ -487,6 +503,7 @@
             ['OS=="win"', {
                 'include_dirs': [
                     '$(HDF5_HOME)/include',
+                    '<!(node -e "require(\'nan\')")',
                     './win/include',
                     './src',
                     'C:/Software/node-v0.12.7/src',
@@ -534,7 +551,8 @@
                     'MAXOSX_DEPLOYMENT_TARGET': '10.10'
                 },
                 'include_dirs': [
-                    '$(HDF5_HOME)/include'
+                    '$(HDF5_HOME)/include',
+                    '<!(node -e "require(\'nan\')")'
                 ],
                 'sources': [
                     'src/h5ds.cc',
